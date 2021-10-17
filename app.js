@@ -15,6 +15,9 @@ app.use(express.urlencoded({extended: false}));
 // Home router
 app.use('/', require('./routes/index'));
 
+// New post router
+app.use('/new', require('./routes/new'));
+
 // Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
 
