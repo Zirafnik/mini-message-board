@@ -1,6 +1,15 @@
-<h2>Create new post</h2>
-<form method="POST" action="/new">
-    <input name="msgUser" type="text" placeholder="Name">
-    <input name="msgText" type="text" placeholder="Write something...">
-    <button type="submit">Create post</button>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body class="flex">
+    <h1>Create new post</h1>
+    <form class="flex" method="POST" action="/new">
+        <input name="msgUser" type="text" placeholder="Name">
+        <textarea name="msgText" placeholder="Write something..." rows="5" cols="50"></textarea>
+        <button class="btn" type="submit">Create post</button>
+    </form>
+  </body>
+</html>

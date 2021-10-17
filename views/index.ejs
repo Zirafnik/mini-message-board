@@ -4,7 +4,7 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
+  <body class="flex">
     <h1><%= title %></h1>
     <% messages.forEach(function(msg){ %>
       <div>
@@ -13,6 +13,12 @@
         <p> <%= msg.added %> </p>
       </div>
       <% }) %>
-      <a href="/new"><button href="/new">Create new post</button></a>
+      <a href="/new"><button class="btn" href="/new">Create new post</button></a>
+
+      <footer>
+        <a href="https://github.com/Zirafnik/mini-message-board" target="_blank">
+          <p>Zirafnik GitHub</p>
+        </a>
+      </footer>
   </body>
 </html>
