@@ -8,7 +8,7 @@ router.get('/', (req, res, next) => {
 })
 
 router.post('/', (req, res, next) => {
-    messages.push({
+    messages.unshift({
         text: req.body.msgText,
         user: req.body.msgUser,
         added: new Date()
